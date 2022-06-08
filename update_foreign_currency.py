@@ -1,5 +1,3 @@
-from json import JSONDecodeError
-
 import requests
 import mysql.connector
 from mysql.connector import Error
@@ -24,11 +22,23 @@ class UpdateForeignCurrency:
         }
 
     def update(self):
+        '''
+        wysyłamy requesta i patrzymy na odpowiedź serwera. jesli dostaniemy cos innego niż 200 to kończmymy
+        wykonywanie programu i zapisujemy informacje do pliku log
+
+        json()['rates'][0]['mid'] to poprostu wyciagniecie wartosci waluty
+
+        nastepnie łaczymy się do bazy danych, pobieramy dane do 'recordu', potem tworzymy instancje DataFrame i
+        dzieki temu mozemy uzywac dzielenia i zaokraglania na calych wierszach
+
+        iterujemy przez wyszskite wiersze i aktualizujemy dane, nastepnie piszemy do pliku logs.log o udanej opreacji
+        jesli polaczenie do bazy jest nieudane informujemy o tym w logu
+        '''
         try:
             usd_res = requests.get(USD_NBP, headers=HEADERS)
             eur_res = requests.get(EUR_NBP, headers=HEADERS)
 
-            if usd_res.status_code == 404 or eur_res.status_code == 404:
+            if usd_res.status_code != 200 or eur_res.status_code != 200:
                 message_usd = f'USD response status: {usd_res.status_code}. USD NBP Endpoint: {USD_NBP}'
                 message_eur = f'EUR response status: {eur_res.status_code}. EUR NBP Endpoint: {EUR_NBP}'
                 with open('logs.log', 'a+') as file:

@@ -2,7 +2,7 @@ from mysql.connector import Error
 import mysql.connector
 import datetime as dt
 import pandas as pd
-import openpyxl
+
 
 COLUMNS = [
             'ProductID',
@@ -32,6 +32,14 @@ class ProductsToExcel:
         }
 
     def to_excel(self) -> bool:
+        '''
+        łaczymy sie do bazy, pobieramy wyszstkie produkty, tworzymy instancje DataFrame z wyszystkimi wierszami
+        nastepenie usuwamy kolumne 'Pictures'. Potem eksportujemy do pliku typu Excel, nadajemy nazwę
+
+        products_YYYY-MM-DD.xlsx
+
+        jesli operacja się nie uda to wpisujemy to do pliku log
+        '''
         try:
             connection = mysql.connector.connect(**self.settings)
             if connection.is_connected():

@@ -12,18 +12,25 @@ SETTINGS = {
 }
 
 
+
 def thread_function():
+    '''
+    funkcja działająca w tle i odświeżająca waluty co 20 godziny
+    '''
+
     while True:
         ufc.update()
-        time.sleep(3600)
+        time.sleep(86400)
 
 
 if __name__ == '__main__':
+
     ufc = UpdateForeignCurrency(**SETTINGS)
     pte = ProductsToExcel(**SETTINGS)
     update_curr_thread = threading.Thread(target=thread_function)
     update_curr_thread.daemon = True
     update_curr_thread.start()
+
     while True:
         print('Kliknij 1, aby wyeskportować dane produktów do Excela\n'
               'Kliknij 2, aby zaktualizować cenę produktów\n'
