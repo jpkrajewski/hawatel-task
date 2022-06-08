@@ -1,0 +1,47 @@
+2022-06-08 22:23:53.168507, Excel export error: Access denied for user 'roo'@'localhost' (using password: YES), 28000
+2022-06-08 22:24:19.234958, Excel export error: Access denied for user 'roo'@'localhost' (using password: YES), 28000
+2022-06-08 22:24:34.863123, Excel exported successfully
+2022-06-08 22:24:46.014968, Excel exported successfully
+2022-06-08 22:26:46.890658, Excel exported successfully
+2022-06-08 22:27:07.028232, Excel exported successfully
+2022-06-08 22:27:07.208504, Currencies updated successfully
+2022-06-08 22:27:13.968331, Excel exported successfully
+2022-06-08 22:27:14.206714, Currencies updated successfully
+2022-06-08 22:27:28.767827, Excel exported successfully
+2022-06-08 22:27:29.017828, Currencies updated successfully
+2022-06-08 22:27:37.512502, Excel exported successfully
+2022-06-08 22:27:37.700583, Currencies updated successfully
+2022-06-08 22:32:03.636458, NBP API connection error
+2022-06-08 22:35:44.432127, Currencies updated successfully
+2022-06-08 22:35:51.682502, NBP API connection error
+2022-06-08 22:39:09.543539, NBP API connection error. USD response code: 200 USD NBP Endpoint: https://api.nbp.pl/api/exchangerates/rates/a/USD/today/, EUR response code: 404 USD NBP Endpoint: https://api.nbp.pl/ap2/exchangerates/rates/a/EUR/today/
+2022-06-08 22:40:21.155129, NBP API connection error. USD response status: 200. USD NBP Endpoint: https://api.nbp.pl/api/exchangerates/rates/a/USD/today/, EUR response status: 404. EUR NBP Endpoint: https://api.nbp.pl/ap2/exchangerates/rates/a/EUR/today/
+2022-06-08 22:41:49.931634, Currencies updated successfully
+2022-06-08 22:56:17.912201, Currencies updated successfully
+2022-06-08 22:57:13.324154, Currencies updated successfully
+2022-06-08 22:58:12.704822, Currencies updated successfully
+2022-06-08 22:58:24.242678, Currencies updated successfully
+2022-06-08 22:59:08.271782, Currencies updated successfully
+2022-06-08 23:01:38.614530, Currencies updated successfully
+2022-06-08 23:09:13.010543, Currencies updated successfully
+2022-06-08 23:09:16.776592, Excel exported successfully
+2022-06-08 23:09:24.931576, Excel exported successfully
+2022-06-08 23:09:28.170275, Excel exported successfully
+2022-06-08 23:09:38.334438, Excel exported successfully
+2022-06-08 23:09:44.139294, Excel exported successfully
+2022-06-08 23:11:48.643494, Currencies updated successfully
+2022-06-08 23:11:56.437342, Currencies updated successfully
+2022-06-08 23:11:58.949853, Excel exported successfully
+2022-06-08 23:12:28.032218, Currencies updated successfully
+2022-06-08 23:12:38.201583, Currencies updated successfully
+2022-06-08 23:12:48.382070, Currencies updated successfully
+2022-06-08 23:12:52.408359, Excel exported successfully
+2022-06-08 23:12:58.548607, Currencies updated successfully
+2022-06-08 23:13:08.722856, Currencies updated successfully
+2022-06-08 23:13:18.922115, Currencies updated successfully
+2022-06-08 23:14:21.520469, Currencies updated successfully
+2022-06-08 23:14:52.766408, Currencies updated successfully
+2022-06-08 23:14:56.150122, Excel exported successfully
+2022-06-08 23:19:58.964977, Currencies updated successfully
+2022-06-08 23:20:01.373978, Currencies updated successfully
+2022-06-08 23:20:06.979260, Currencies updated successfully
